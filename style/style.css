@@ -28,6 +28,20 @@ color: #131313;
 .dark-03{
 color: #727272;
 }
+.btn-primary{
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: none;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
 
 /* header Style */
 
@@ -39,7 +53,12 @@ color: #727272;
 /* navbar style */
 .navbar{
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
+}
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 .nav-item{
@@ -51,6 +70,87 @@ color: #727272;
     font-weight: 500;
 }
 
+
+/* bannar Style */
+
+.bannar{
+    margin: 0 auto;
+}
+.bannar-content{
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.bannar-title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+.bannar-description {
+    font-size: 1rem;
+}
+.bannar-image {
+    width: 100%;
+}
+
+/* teams and feature Style */
+.teams{
+    align-items: center;
+    margin: 130px auto;
+}
+.teams-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.feature {
+    max-width: 530px;
+    margin-left: 73px;
+}
+.feature-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+#quick-list{
+    font-weight: 800;
+}
+.feature-color {
+    color: #FF900E;
+    font-weight: 800;
+}
+.feature-description {
+    font-size: 1rem;
+}
+
+/* small Device  */
+@media screen and (max-width: 576px) {
+
+    .navbar, .nav-links, .teams{
+        flex-direction: column;
+    }
+    .teams-image {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature{
+        margin-left: 20px;
+    }
+    .teams {
+        margin-top: 50px;
+    }
+    
+}
+
+/* mediam Device */
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .teams-image{
+        width: 80%;
+    }
+    .teams-image img{
+        width: 100%;
+    }
+}
 
 
                                         
