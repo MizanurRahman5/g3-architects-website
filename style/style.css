@@ -40,6 +40,10 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
+.section-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
 
 
 
@@ -106,10 +110,7 @@ main{
     max-width: 530px;
     margin-left: 73px;
 }
-.feature-title{
-    font-size: 3rem;
-    font-weight: 600;
-}
+
 #quick-list{
     font-weight: 800;
 }
@@ -121,13 +122,71 @@ main{
     font-size: 1rem;
 }
 
+/* some facts style */
+.more-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+}
+.facts{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 100px;
+}
+.number{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.feature-description{
+    max-width: 540px;
+}
+
+.facts-des{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 50px;
+}
+
+/* sponsor Section Style */
+.our-sponsor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.sponsor-companeis{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 70px;
+}
+.sponsor-companeis img{
+    filter: grayscale(100);
+}
+
+
 /* small Device  */
 @media screen and (max-width: 576px) {
 
     .navbar, .nav-links, .teams{
         flex-direction: column;
     }
-    .teams-image {
+    .teams-image, .facts-container, .sponsor-companeis {
         grid-template-columns: repeat(1,1fr);
     }
     .feature{
@@ -135,6 +194,12 @@ main{
     }
     .teams {
         margin-top: 50px;
+    }
+    .facts-container, .sponsor-companeis{
+        gap: 50px;
+    }
+    .facts{
+        margin-bottom: auto;
     }
     
 }
@@ -149,6 +214,9 @@ main{
     }
     .teams-image img{
         width: 100%;
+    }
+    .facts-container{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
