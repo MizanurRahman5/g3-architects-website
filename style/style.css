@@ -180,6 +180,24 @@ main{
 }
 
 
+/* love feature section style */
+.love {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+#features{
+    max-width: 460px;
+    border-left: 5px solid #FF900E;
+    padding-left: 30px;
+}
+.card-container{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+
 /* small Device  */
 @media screen and (max-width: 576px) {
 
