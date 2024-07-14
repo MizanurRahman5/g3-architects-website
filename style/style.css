@@ -197,11 +197,26 @@ main{
     padding: 30px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
 }
+.architect-image img{
+    width: 100%;
+}
+
+#Experience-badge{
+    padding: 45px 42px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: -80px;
+    margin-top: -100px;
+}
+#Experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 /* small Device  */
 @media screen and (max-width: 576px) {
 
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .love{
         flex-direction: column;
     }
     .teams-image, .facts-container, .sponsor-companeis {
@@ -218,6 +233,9 @@ main{
     }
     .facts{
         margin-bottom: auto;
+    }
+    #Experience-badge{
+        margin: 20px;
     }
     
 }
